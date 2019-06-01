@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giphy API</title>
-</head>
-<body>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
 
-<script src = "api.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Jumbotron for Title -->
+        <div class="jumbotron" style="background-color: #18A2B8 ; color: white;">
+            <h1 class="text-center">
+                <strong>
+                    Express Your Emotions! <i class="fa fa-smile-o" aria-hidden="true"></i> </strong>
+            </h1>
+        </div>
+
+        <!-- Row for Searching New York Times -->
+        <div class="row">
+            <div class="col-sm-12">
+                <br>
+                <!-- First card is for handling the search parameters -->
+                <div class="card">
+                    <div class="card-body">
+                        <div id="buttons-view"></div>
+                        <form id="emotion-form">
+                            <label for="emotion-input">How are you feeling?</label>
+                            <input type="text" id="emotion-input">
+                            <!-- Button triggers new movie to be added -->
+                            <input id="add-emotion" type="submit" value="I'm feeling it">
+                            <div id="gifs-view"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Region -->
+        <div class="row">
+            <div class="col-sm-12">
+
+                <!-- Line Break followed by closing -->
+                <hr>
+                <h5 class="text-center">
+                    <small>Let it out homeboy</small>
+                    </small>
+                </h5>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Code to the JavaScript File -->
+    <script src="api.js"></script>
 </body>
+
 </html>

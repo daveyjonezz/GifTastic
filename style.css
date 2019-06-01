@@ -1,0 +1,11 @@
+button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+
+.emotion {
+    float: left;
+    margin: 5px;
+}
