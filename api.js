@@ -1,3 +1,5 @@
+// code was taken and worked from activities in week 6
+
 var emotions = ["pumped", "heated", "hurt", "wrecked", "awkward", "pensive", "petty", "wishful"];
 var offset = 0
 // Function for displaying emotional data
