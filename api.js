@@ -52,7 +52,7 @@ function displayEmotionalInfo() {
     $(".rating").remove();
     var emotion = $(this).attr("data-name");
     
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + emotion + "&api_key=KCFBu3u0DKlVaEqBicNZ5TZeeRP3tddY&limit=10&offset=" + offset;
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + emotion + "&api_key=KCFBu3u0DKlVaEqBicNZ5TZeeRP3tddY&limit=10&offset=" + offset;
 
     // Creating an AJAX call for the specific movie button being clicked
     $.ajax({
