@@ -32,7 +32,15 @@ function renderButtons() {
 $("#add-emotion").on("click", function (event) {
     event.preventDefault();
     // This line grabs the input from the textbox
-    var emotion = $("#emotion-input").val().trim();
+    var emotion = $("#emotion-input").val().trim().toLowerCase();
+    if (emotion === '' || emotions.includes(emotion)) {
+        $("#emotion-input").addClass("error")
+
+        // remove the class after the animation completes
+        setTimeout(function () {
+            $("#emotion-input").removeClass("error");
+        }, 300);
+    } else {
 
     // Adding movie from the textbox to our array
     emotions.push(emotion);
@@ -40,6 +48,7 @@ $("#add-emotion").on("click", function (event) {
 
     // Calling renderButtons which handles the processing of our movie array
     renderButtons();
+}
 });
 
 
